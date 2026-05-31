@@ -1,5 +1,3 @@
-# phisualaizer
-PHISH-inspired lighting visualizer / CK5 omage / by FONE.TOKYO
 # PHISUALAIZER v1.0
 
 **PHISH-inspired lighting visualizer**
@@ -11,6 +9,19 @@ Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
 
 A browser-based lighting visualizer inspired by the legendary PHISH lighting designer **Chris Kuroda (CK5)**.
 Built with Three.js. No installation required. Just open in Chrome.
+
+---
+
+## Installation
+
+**None. Zero. Zip.**
+
+1. Download ZIP from this repository
+2. Unzip
+3. Open `phisualaizer_control.html` in **Chrome**
+4. Done. 🎉
+
+> ⚠️ **Chrome recommended** — BroadcastChannel (TV output sync) requires Chrome.
 
 ---
 
