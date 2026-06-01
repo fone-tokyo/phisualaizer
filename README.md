@@ -12,6 +12,13 @@ Built with Three.js. No installation required. Just open in Chrome.
 
 ---
 
+## Disclaimer
+
+This is an **unofficial fan-made project**.
+Not affiliated with, endorsed by, or connected to Phish, CK5 (Chris Kuroda), or any related organizations.
+
+---
+
 ## ⚠️ Warning
 
 The **BLINK** feature produces flashing lights.
