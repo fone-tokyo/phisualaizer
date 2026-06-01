@@ -1,4 +1,4 @@
-# PHISUALAIZER v1.0
+# PHISUALAIZER v1.0.1
 
 **PHISH-inspired lighting visualizer**
 Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
@@ -175,7 +175,8 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 
 | Version | Date | Notes |
 |---------|------|-------|
-| v1.0 | 2026.05.31 | Initial release — built in one day |
+| v1.0 | 2026.05.31 | Initial release — built in one day
+| v1.0.1 | 2026.06.01 | Add disclaimer and warning | |
 
 ---
 
