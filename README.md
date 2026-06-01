@@ -12,6 +12,17 @@ Built with Three.js. No installation required. Just open in Chrome.
 
 ---
 
+## ⚠️ Warning
+
+The **BLINK** feature produces flashing lights.
+Flashing lights may cause photosensitive seizures in some people.
+
+- Use the BLINK feature with caution.
+- Not recommended for public events without prior warning to attendees.
+- If you experience discomfort, dizziness, or seizures, stop use immediately.
+
+---
+
 ## Installation
 
 **None. Zero. Zip.**
