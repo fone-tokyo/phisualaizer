@@ -17,6 +17,10 @@ Built with Three.js. No installation required. Just open in Chrome.
 This is an **unofficial fan-made project**.
 Not affiliated with, endorsed by, or connected to Phish, CK5 (Chris Kuroda), or any related organizations.
 
+This software is provided "as is", without warranty of any kind.
+The authors are not responsible for any damages, injuries, or issues arising from the use of this software.
+Use at your own risk.
+
 ---
 
 ## ⚠️ Warning
