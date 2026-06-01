@@ -21,6 +21,7 @@ Built with Three.js. No installation required. Just open in Chrome.
 3. Open `phisualaizer_control.html` in **Chrome**
 4. Done. 🎉
 
+> ✅ **Works on Mac and Windows.**
 > ⚠️ **Chrome recommended** — BroadcastChannel (TV output sync) requires Chrome.
 
 ---
@@ -74,6 +75,61 @@ Built with Three.js. No installation required. Just open in Chrome.
 
 ---
 
+## How it was made 🤖
+
+**Built in a single day — May 31, 2026.**
+
+This entire project was created through a conversation with **Claude (AI by Anthropic)**.
+
+No traditional coding was done by the author.
+Pure collaboration between human vision and AI execution.
+
+- The idea, creative direction, and all design decisions → **human**
+- The code → **AI-generated**
+
+This is what human-AI collaboration looks like in 2026. ✨
+
+---
+
+## How to customize with Claude 🎨
+
+You don't need to know how to code.
+Anyone can modify PHISUALAIZER using Claude.
+
+1. Go to **claude.ai**
+2. Upload `phisualaizer_control.html`
+3. Ask Claude to modify anything:
+   - *"Add a new light group"*
+   - *"Change the default colors to red"*
+   - *"Add a strobe effect"*
+   - *"Make the particles react to high frequencies"*
+4. Download the modified file
+5. Open in Chrome
+
+**No coding knowledge required!**
+
+---
+
+## Contributions Welcome! 🎸
+
+Fork it, improve it, share it.
+
+Ideas for future versions:
+- Mobile support
+- Better audio sync
+- New particle types
+- Preset save/load
+- More light groups
+
+If you improve it, please:
+- Credit **FONE.TOKYO** as the original
+- Share your version on GitHub
+- Let us know — we'd love to see it!
+
+Pull requests welcome!
+
+---
+
 ## License
 
 MIT License — Free to use, modify, and distribute.
@@ -88,6 +144,7 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 - Inspired by **Chris Kuroda (CK5)** — PHISH lighting designer
 - Built with [Three.js r128](https://threejs.org/)
 - Created by **FONE.TOKYO PROJECT**
+- Built in collaboration with **Claude by Anthropic**
 - `github.com/fone-tokyo/phisualaizer`
 
 ---
@@ -96,7 +153,7 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 
 | Version | Date | Notes |
 |---------|------|-------|
-| v1.0 | 2026.05.31 | Initial release |
+| v1.0 | 2026.05.31 | Initial release — built in one day |
 
 ---
 
