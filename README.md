@@ -7,7 +7,7 @@ Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
 
 ## What is PHISUALAIZER?
 
-A browser-based lighting visualizer inspired by the legendary PHISH lighting designer **Chris Kuroda (CK5)**.
+A browser-based lighting visualizer inspired by the legendary PHISH lighting director **Chris Kuroda (CK5)**.
 Built with Three.js. No installation required. Just open in Chrome.
 
 ---
@@ -141,7 +141,7 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 
 ## Credits
 
-- Inspired by **Chris Kuroda (CK5)** — PHISH lighting designer
+- Inspired by **Chris Kuroda (CK5)** — PHISH lighting director
 - Built with [Three.js r128](https://threejs.org/)
 - Created by **FONE.TOKYO PROJECT**
 - Built in collaboration with **Claude by Anthropic**
