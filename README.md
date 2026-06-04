@@ -40,7 +40,7 @@ Flashing lights may cause photosensitive seizures in some people.
 
 1. Download ZIP from this repository
 2. Unzip
-3. Open `phisualaizer_control.html` in **Chrome**
+3. Open `phisualaizer_control_111.html` in **Chrome**
 4. Done.
 
 > **Works on Mac and Windows.**
@@ -68,22 +68,22 @@ Flashing lights may cause photosensitive seizures in some people.
 
 | File | Description |
 |------|-------------|
-| `phisualaizer_control.html` | Main controller -- open this in Chrome |
-| `phisualaizer_view.html` | TV output view -- open in second screen |
+| `phisualaizer_control_111.html` | Main controller -- open this in Chrome |
+| `phisualaizer_view_111.html` | TV output view -- open in second screen |
 
 ---
 
 ## Usage
 
 ### Single Screen
-1. Open `phisualaizer_control.html` in Chrome
+1. Open `phisualaizer_control_111.html` in Chrome
 2. That's it. Everything works standalone.
 
 ### Dual Screen (TV Output)
 1. Connect HDMI to TV
 2. Set TV as extended display (not mirror)
-3. Open `phisualaizer_control.html` in Chrome (on Mac screen)
-4. Open `phisualaizer_view.html` in a new tab -- drag to TV -- F11 fullscreen
+3. Open `phisualaizer_control_111.html` in Chrome (on Mac screen)
+4. Open `phisualaizer_view_111.html` in a new tab -- drag to TV -- F11 fullscreen
 5. Both tabs sync automatically via BroadcastChannel
 
 > Both files must be open in the **same Chrome browser** on the **same PC**
@@ -138,7 +138,7 @@ You don't need to know how to code.
 Anyone can modify PHISUALAIZER using Claude.
 
 1. Go to **claude.ai**
-2. Upload `phisualaizer_control.html`
+2. Upload `phisualaizer_control_111.html`
 3. Ask Claude to modify anything:
    - *"Add a new light group"*
    - *"Change the default colors to red"*
