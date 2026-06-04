@@ -1,4 +1,4 @@
-# PHISUALAIZER v1.0.1
+# PHISUALAIZER v1.1
 
 **PHISH-inspired lighting visualizer**
 Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
@@ -44,6 +44,7 @@ Flashing lights may cause photosensitive seizures in some people.
 4. Done. 🎉
 
 > ✅ **Works on Mac and Windows.**
+> ✅ **Works offline.** — Both files are fully self-contained. No internet required.
 > ⚠️ **Chrome recommended** — BroadcastChannel (TV output sync) requires Chrome.
 
 ---
@@ -59,6 +60,7 @@ Flashing lights may cause photosensitive seizures in some people.
 - **SYNC** — Group sync, column sync, cross-light sync
 - **AUTO** — Parameters change slowly and automatically
 - **SLOW / STOP** — Fine control of motion
+- **COMBO** — 2001 performance combo triggers (new in v1.1)
 
 ---
 
@@ -94,6 +96,23 @@ Flashing lights may cause photosensitive seizures in some people.
 - M4A is not supported
 - Drop audio file onto the DROP/SELECT area
 - Particles react to bass frequencies
+
+---
+
+## COMBO — 2001 Performance Mode 🎸
+
+Trigger each note of the iconic 2001 build with a single key.
+
+| Key | Button | Effect |
+|-----|--------|--------|
+| `a` | C1 | L2 lights up from the back |
+| `s` | C2 | L2 + L1 join in |
+| `d` | C3 | L2 + L1 + L3 — full build |
+| `␣` | C4 | ALL lights — flash → freeze → sparkle fade |
+
+- Hold `a` / `s` / `d` to sustain the effect. Release to return.
+- `␣` (spacebar) triggers the full C4 sequence automatically:
+  - Full blast → 3-second freeze (the "decisive pose") → 5-second sparkle fadeout → back to normal
 
 ---
 
@@ -175,8 +194,9 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 
 | Version | Date | Notes |
 |---------|------|-------|
-| v1.0 | 2026.05.31 | Initial release — built in one day
-| v1.0.1 | 2026.06.01 | Add disclaimer and warning | |
+| v1.0 | 2026.05.31 | Initial release — built in one day |
+| v1.0.1 | 2026.06.01 | Add disclaimer and warning |
+| v1.1 | 2026.06.04 | Offline support / COMBO mode (2001) / Keyboard shortcuts |
 
 ---
 
