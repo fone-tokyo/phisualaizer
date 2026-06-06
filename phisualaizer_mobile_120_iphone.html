@@ -1171,6 +1171,24 @@ function _charaSequence(){
   },3000);
 }
 
+// ===== BROADCAST CHANNEL (send) =====
+const bc = new BroadcastChannel('phisualaizer_channel');
+let bcLastSent = 0;
+function bcSend(){
+  const now = Date.now();
+  if(now - bcLastSent < 50) return; // throttle to 20fps max
+  bcLastSent = now;
+  bc.postMessage({
+    type: 'state',
+    LP: JSON.parse(JSON.stringify(LP)),
+    lOn: {...lOn},
+    slow,
+    stop,
+    PX: PX_DEFS.map(d=>({...d})),
+    CAM: {...CAM}
+  });
+}
+
 // ===== ANIMATION LOOP =====
 function animate(){
   requestAnimationFrame(animate);
@@ -1230,6 +1248,7 @@ function animate(){
   if(maxFP>0.55) renderer.setClearColor(new THREE.Color(0x000a1b).lerp(new THREE.Color(0x0c1e3a),(maxFP-0.55)*0.45),1);
   else renderer.setClearColor(0x000a1b,1);
   renderer.render(scene,camera);
+  bcSend();
 }
 animate();
 </script>
