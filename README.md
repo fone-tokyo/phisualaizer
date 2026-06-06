@@ -1,4 +1,4 @@
-# PHISUALAIZER v1.1.1
+# PHISUALAIZER v1.2.0
 
 **PHISH-inspired lighting visualizer**
 Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
@@ -8,7 +8,10 @@ Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
 ## What is PHISUALAIZER?
 
 A browser-based lighting visualizer inspired by the legendary PHISH lighting director **Chris Kuroda (CK5)**.
-Built with Three.js. No installation required. Just open in Chrome.
+Built with Three.js. No installation required.
+
+- **PC version** -- Open in Chrome. Dual screen TV output via BroadcastChannel.
+- **Mobile version (NEW in v1.2.0)** -- Open in iPhone Safari. Single file, no WiFi required.
 
 ---
 
@@ -38,6 +41,7 @@ Flashing lights may cause photosensitive seizures in some people.
 
 **None. Zero. Zip.**
 
+### PC Version
 1. Download ZIP from this repository
 2. Unzip
 3. Open `phisualaizer_control_111.html` in **Chrome**
@@ -47,10 +51,20 @@ Flashing lights may cause photosensitive seizures in some people.
 > **Works offline.** -- Both files are fully self-contained. No internet required.
 > **Chrome recommended** -- BroadcastChannel (TV output sync) requires Chrome.
 
+### Mobile Version (iPhone Safari)
+1. Download `phisualaizer_mobile_120_iphone.html`
+2. Open in **iPhone Safari**
+3. Done.
+
+> **Works offline.** -- Fully self-contained. No internet required.
+> **iPhone Safari only.** -- Optimized for landscape mode.
+> **Single file.** -- No second screen file needed.
+
 ---
 
 ## Features
 
+### PC Version
 - **6 Light Groups** -- CEILING / WALL-HI / FLOOR / LEFT / RIGHT / MV (26 beams total)
 - **Individual Control** -- Speed, Length, Spread, Hue, Brightness, Blink per light
 - **Particle Effects** -- FLURRY / SPARKS / RAIN / ORBIT / BURST / DRIFT
@@ -60,7 +74,17 @@ Flashing lights may cause photosensitive seizures in some people.
 - **SYNC** -- Group sync, column sync, cross-light sync
 - **AUTO** -- Parameters change slowly and automatically
 - **SLOW / STOP** -- Fine control of motion
-- **COMBO** -- 2001 performance combo triggers (new in v1.1)
+- **COMBO** -- 2001 performance combo triggers
+
+### Mobile Version (NEW in v1.2.0)
+- **All PC features included** -- Same lights, particles, camera, audio, combos
+- **Touch optimized layout** -- Left: controls / Center: visual / Right: combos
+- **Semi-transparent control panel** -- Slides up from bottom, visual always visible
+- **Toggle COMBO mode** -- Tap to lock ON, tap again to release (no hold required)
+- **SYNC lock** -- Lock any parameter to L1 for live simultaneous control
+- **STOP affects lights only** -- Particles keep running independently
+- **Photosensitive seizure protection** -- BLINK speed limited to safe range
+- **Single file** -- No second screen file needed
 
 ---
 
@@ -68,18 +92,19 @@ Flashing lights may cause photosensitive seizures in some people.
 
 | File | Description |
 |------|-------------|
-| `phisualaizer_control_111.html` | Main controller -- open this in Chrome |
-| `phisualaizer_view_111.html` | TV output view -- open in second screen |
+| `phisualaizer_control_111.html` | PC controller -- open in Chrome |
+| `phisualaizer_view_111.html` | PC TV output view -- open in second screen |
+| `phisualaizer_mobile_120_iphone.html` | Mobile controller -- open in iPhone Safari (NEW v1.2.0) |
 
 ---
 
 ## Usage
 
-### Single Screen
+### PC -- Single Screen
 1. Open `phisualaizer_control_111.html` in Chrome
 2. That's it. Everything works standalone.
 
-### Dual Screen (TV Output)
+### PC -- Dual Screen (TV Output)
 1. Connect HDMI to TV
 2. Set TV as extended display (not mirror)
 3. Open `phisualaizer_control_111.html` in Chrome (on Mac screen)
@@ -87,6 +112,24 @@ Flashing lights may cause photosensitive seizures in some people.
 5. Both tabs sync automatically via BroadcastChannel
 
 > Both files must be open in the **same Chrome browser** on the **same PC**
+
+### Mobile -- iPhone Safari
+1. Open `phisualaizer_mobile_120_iphone.html` in iPhone Safari
+2. Rotate to **landscape mode**
+3. Tap **CONTROL** to open the light control panel
+4. Use **COMBO** buttons on the right for quick presets
+5. For TV output: connect via WiFi cast (Chromecast / Apple TV / Fire TV Stick)
+
+### Add to Home Screen (iPhone) -- Recommended
+Install PHISUALAIZER as a fullscreen app on your iPhone:
+
+1. Open `phisualaizer_mobile_120_iphone.html` in **Safari**
+2. Tap the **Share button** (box with arrow icon at the bottom)
+3. Tap **"Add to Home Screen"**
+4. Tap **"Add"**
+
+> Launches fullscreen in landscape mode -- just like a native app.
+> No App Store. No install. Just tap and play.
 
 ---
 
@@ -103,16 +146,19 @@ Flashing lights may cause photosensitive seizures in some people.
 
 Trigger each note of the iconic 2001 build with a single key.
 
-| Key | Button | Effect |
-|-----|--------|--------|
+| Key (PC) | Button | Effect |
+|----------|--------|--------|
 | `a` | C1 | L2 lights up from the back |
 | `s` | C2 | L2 + L1 join in |
 | `d` | C3 | L2 + L1 + L3 -- full build |
 | `[SPACE]` | C4 | ALL lights -- flash -> freeze -> sparkle fade |
 
-- Hold `a` / `s` / `d` to sustain the effect. Release to return.
-- `[SPACE]` triggers the full C4 sequence automatically:
-  - Full blast -> 3-second freeze (the "decisive pose") -> 5-second sparkle fadeout -> back to normal
+**PC:** Hold `a` / `s` / `d` to sustain the effect. Release to return.
+
+**Mobile:** Tap C1 / C2 / C3 to lock ON. Tap same button again to release. Tap a different button to switch instantly (no flash between combos).
+
+`[SPACE]` / C4 triggers the full sequence automatically:
+- Full blast -> 3-second freeze (the "decisive pose") -> 5-second sparkle fadeout -> back to normal
 
 ---
 
@@ -156,7 +202,7 @@ Anyone can modify PHISUALAIZER using Claude.
 Fork it, improve it, share it.
 
 Ideas for future versions:
-- Mobile support
+- ~~Mobile support~~ -- Done in v1.2.0!
 - Better audio sync
 - New particle types
 - Preset save/load
@@ -198,6 +244,7 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 | v1.0.1 | 2026.06.01 | Add disclaimer and warning |
 | v1.1 | 2026.06.04 | Offline support / COMBO mode (2001) / Keyboard shortcuts |
 | v1.1.1 | 2026.06.04 | Full ASCII cleanup -- all comments in English / charset fix |
+| v1.2.0 | 2026.06.06 | Mobile Safari version -- touch optimized / toggle COMBO / SYNC lock / seizure protection |
 
 ---
 
