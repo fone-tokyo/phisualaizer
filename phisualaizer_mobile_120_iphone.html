@@ -934,7 +934,7 @@ function makeGroup(k){
   group.position.set(...defWithLen.pos);group.userData={beams,def:defWithLen,phase:0,blinkPhase:0};return group;
 }
 function rebuildLight(k){
-  const ph=lightGroups[k]?lightGroups[k].userData.phase:Math.random()*Math.PI*2;
+  const ph=lightGroups[k]?lightGroups[k].userData.phase:0;
   const bp=lightGroups[k]?lightGroups[k].userData.blinkPhase:0;
   if(lightGroups[k]) scene.remove(lightGroups[k]);
   const g=makeGroup(k);g.userData.phase=ph;g.userData.blinkPhase=bp;scene.add(g);lightGroups[k]=g;
