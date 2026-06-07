@@ -735,9 +735,9 @@ const COMBO_STATE={active:null,sparkTimer:null,savedLP:{},savedPhase:{}};
 function animate(){
   requestAnimationFrame(animate);
   KEYS.forEach(k=>updateAuto(k));
-  // Send every 4 frames (60fps -> ~15fps)
+  // Send every 4 frames normally, every frame during C4 sparkle
   bcTick++;
-  if(bcTick%4===0) sendState();
+  if(COMBO_STATE.sparkTimer || bcTick%4===0) sendState();
   let maxFP=0;
   Object.entries(lightGroups).forEach(([k,grp])=>{
     if(!lOn[k]){grp.visible=false;return;}
@@ -922,7 +922,7 @@ function _charaSequence(){
         clearInterval(COMBO_STATE.sparkTimer);
         COMBO_STATE.sparkTimer=null;
         _comboRestore();
-        stop=COMBO_STATE.savedStop; // Restore stop state
+        stop=false; // C4 always releases stop after sequence
         document.getElementById('bst').classList.toggle('on',stop);
         COMBO_STATE.active=null;
         document.getElementById('cb_CHARA').classList.remove('active');
