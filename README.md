@@ -1,4 +1,4 @@
-# PHISUALAIZER v1.1.1
+# PHISUALAIZER v1.1.2
 
 **PHISH-inspired lighting visualizer**
 Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
@@ -8,7 +8,9 @@ Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
 ## What is PHISUALAIZER?
 
 A browser-based lighting visualizer inspired by the legendary PHISH lighting director **Chris Kuroda (CK5)**.
-Built with Three.js. No installation required. Just open in Chrome.
+Built with Three.js. No installation required.
+
+Open in Chrome. Dual screen TV output via BroadcastChannel.
 
 ---
 
@@ -30,6 +32,7 @@ Flashing lights may cause photosensitive seizures in some people.
 
 - Use the BLINK feature with caution.
 - Not recommended for public events without prior warning to attendees.
+- BLINK speed is limited to a safe range automatically.
 - If you experience discomfort, dizziness, or seizures, stop use immediately.
 
 ---
@@ -40,7 +43,7 @@ Flashing lights may cause photosensitive seizures in some people.
 
 1. Download ZIP from this repository
 2. Unzip
-3. Open `phisualaizer_control_111.html` in **Chrome**
+3. Open `phisualaizer_control_112.html` in **Chrome**
 4. Done.
 
 > **Works on Mac and Windows.**
@@ -52,15 +55,16 @@ Flashing lights may cause photosensitive seizures in some people.
 ## Features
 
 - **6 Light Groups** -- CEILING / WALL-HI / FLOOR / LEFT / RIGHT / MV (26 beams total)
-- **Individual Control** -- Speed, Length, Spread, Hue, Brightness, Blink per light
-- **Particle Effects** -- FLURRY / SPARKS / RAIN / ORBIT / BURST / DRIFT
+- **Individual Control** -- Length, Speed, Spread, Hue, Brightness, Blink per light
+- **SYNC Lock** -- Lock any parameter column so all lights move together in real time
+- **Particle Effects** -- FLURRY / SPARKS / RAIN / ORBIT / BURST / DRIFT (collapsible panel)
 - **Audio Reactive** -- Load WAV/MP3 and particles react to the music
 - **Camera Control** -- ORBIT / DISTANCE / HEIGHT / FOV
 - **TV Output** -- Dual screen mode via BroadcastChannel API (16:9)
-- **SYNC** -- Group sync, column sync, cross-light sync
 - **AUTO** -- Parameters change slowly and automatically
-- **SLOW / STOP** -- Fine control of motion
-- **COMBO** -- 2001 performance combo triggers (new in v1.1)
+- **SLOW / STOP** -- STOP freezes lights only; particles keep running independently
+- **GROUP** -- Phase sync control per light
+- **COMBO** -- 2001 performance combo triggers
 
 ---
 
@@ -68,25 +72,28 @@ Flashing lights may cause photosensitive seizures in some people.
 
 | File | Description |
 |------|-------------|
-| `phisualaizer_control_111.html` | Main controller -- open this in Chrome |
-| `phisualaizer_view_111.html` | TV output view -- open in second screen |
+| `phisualaizer_control_112.html` | Controller -- open in Chrome |
+| `phisualaizer_view_112.html` | TV output view -- open in second screen |
 
 ---
 
 ## Usage
 
 ### Single Screen
-1. Open `phisualaizer_control_111.html` in Chrome
+1. Open `phisualaizer_control_112.html` in Chrome
 2. That's it. Everything works standalone.
 
 ### Dual Screen (TV Output)
+
 1. Connect HDMI to TV
 2. Set TV as extended display (not mirror)
-3. Open `phisualaizer_control_111.html` in Chrome (on Mac screen)
-4. Open `phisualaizer_view_111.html` in a new tab -- drag to TV -- F11 fullscreen
+3. Open `phisualaizer_control_112.html` in Chrome (on Mac screen)
+4. Open `phisualaizer_view_112.html` in a new tab -- drag to TV -- F11 fullscreen (Windows) / Cmd+Shift+F (Mac)
 5. Both tabs sync automatically via BroadcastChannel
 
 > Both files must be open in the **same Chrome browser** on the **same PC**
+
+> On older TVs, some lag may occur between the control and view screens.
 
 ---
 
@@ -110,9 +117,10 @@ Trigger each note of the iconic 2001 build with a single key.
 | `d` | C3 | L2 + L1 + L3 -- full build |
 | `[SPACE]` | C4 | ALL lights -- flash -> freeze -> sparkle fade |
 
-- Hold `a` / `s` / `d` to sustain the effect. Release to return.
-- `[SPACE]` triggers the full C4 sequence automatically:
-  - Full blast -> 3-second freeze (the "decisive pose") -> 5-second sparkle fadeout -> back to normal
+Hold `a` / `s` / `d` to sustain the effect. Release to return.
+
+`[SPACE]` / C4 triggers the full sequence automatically:
+- Full blast -> 3-second freeze (the "decisive pose") -> 5-second sparkle fadeout -> back to normal
 
 ---
 
@@ -138,7 +146,7 @@ You don't need to know how to code.
 Anyone can modify PHISUALAIZER using Claude.
 
 1. Go to **claude.ai**
-2. Upload `phisualaizer_control_111.html`
+2. Upload `phisualaizer_control_112.html`
 3. Ask Claude to modify anything:
    - *"Add a new light group"*
    - *"Change the default colors to red"*
@@ -156,7 +164,6 @@ Anyone can modify PHISUALAIZER using Claude.
 Fork it, improve it, share it.
 
 Ideas for future versions:
-- Mobile support
 - Better audio sync
 - New particle types
 - Preset save/load
@@ -198,6 +205,7 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 | v1.0.1 | 2026.06.01 | Add disclaimer and warning |
 | v1.1 | 2026.06.04 | Offline support / COMBO mode (2001) / Keyboard shortcuts |
 | v1.1.1 | 2026.06.04 | Full ASCII cleanup -- all comments in English / charset fix |
+| v1.1.2 | 2026.06.07 | SYNC lock (all 6 params) / STOP lights only / BLINK seizure protection / C4 bug fix / L2 beam offset / PARTICLE collapsible / GROUP initial values / phase sync fix |
 
 ---
 
