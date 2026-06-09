@@ -1,3 +1,8 @@
+# PHISUALAIZER v1.1.3
+small update.change UI.
+
+---
+
 # PHISUALAIZER v1.1.2
 
 **PHISH-inspired lighting visualizer**
