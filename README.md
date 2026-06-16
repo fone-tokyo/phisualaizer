@@ -1,9 +1,4 @@
-# PHISUALAIZER v1.1.3
-small update.change UI.
-
----
-
-# PHISUALAIZER v1.1.2
+# PHISUALAIZER v1.1.4
 
 **PHISH-inspired lighting visualizer**
 Inspired by CK5 (Chris Kuroda) / Created by FONE.TOKYO PROJECT
@@ -48,7 +43,7 @@ Flashing lights may cause photosensitive seizures in some people.
 
 1. Download ZIP from this repository
 2. Unzip
-3. Open `phisualaizer_control_112.html` in **Chrome**
+3. Open `phisualaizer_control_114.html` in **Chrome**
 4. Done.
 
 > **Works on Mac and Windows.**
@@ -77,23 +72,23 @@ Flashing lights may cause photosensitive seizures in some people.
 
 | File | Description |
 |------|-------------|
-| `phisualaizer_control_112.html` | Controller -- open in Chrome |
-| `phisualaizer_view_112.html` | TV output view -- open in second screen |
+| `phisualaizer_control_114.html` | Controller -- open in Chrome |
+| `phisualaizer_view_114.html` | TV output view -- open in second screen |
 
 ---
 
 ## Usage
 
 ### Single Screen
-1. Open `phisualaizer_control_112.html` in Chrome
+1. Open `phisualaizer_control_114.html` in Chrome
 2. That's it. Everything works standalone.
 
 ### Dual Screen (TV Output)
 
 1. Connect HDMI to TV
 2. Set TV as extended display (not mirror)
-3. Open `phisualaizer_control_112.html` in Chrome (on Mac screen)
-4. Open `phisualaizer_view_112.html` in a new tab -- drag to TV -- F11 fullscreen (Windows) / Cmd+Shift+F (Mac)
+3. Open `phisualaizer_control_114.html` in Chrome (on Mac screen)
+4. Open `phisualaizer_view_114.html` in a new tab -- drag to TV -- F11 fullscreen (Windows) / Cmd+Shift+F (Mac)
 5. Both tabs sync automatically via BroadcastChannel
 
 > Both files must be open in the **same Chrome browser** on the **same PC**
@@ -151,7 +146,7 @@ You don't need to know how to code.
 Anyone can modify PHISUALAIZER using Claude.
 
 1. Go to **claude.ai**
-2. Upload `phisualaizer_control_112.html`
+2. Upload `phisualaizer_control_114.html`
 3. Ask Claude to modify anything:
    - *"Add a new light group"*
    - *"Change the default colors to red"*
@@ -211,6 +206,8 @@ Please include: `Based on PHISUALAIZER by FONE.TOKYO`
 | v1.1 | 2026.06.04 | Offline support / COMBO mode (2001) / Keyboard shortcuts |
 | v1.1.1 | 2026.06.04 | Full ASCII cleanup -- all comments in English / charset fix |
 | v1.1.2 | 2026.06.07 | SYNC lock (all 6 params) / STOP lights only / BLINK seizure protection / C4 bug fix / L2 beam offset / PARTICLE collapsible / GROUP initial values / phase sync fix |
+| v1.1.3 | 2026.06.13 | UI redesign -- right sidebar layout / transposed parameter grid / collapsible PARTICLE panel / CAM single-row controls / full-width audio bar |
+| v1.1.4 | 2026.06.13 | L1 CEILING dynamic sweep (sin wave / SPEED-linked) / L4+L5 wider swing range (0.9→1.8) / L3 FLOOR screen-side offset (+0.1) |
 
 ---
 
